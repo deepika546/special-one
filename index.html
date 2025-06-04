@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sirf Tumhare Liye – Modak 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('deepu.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      color: #bf0e0e;
+      text-align: center;
+    }
+    .overlay {
+      background-color: rgba(255, 192, 203, 0.6);
+      backdrop-filter: blur(4px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .heart-button {
+      background: #ff69b4;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      border-radius: 50px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      margin-top: 2rem;
+      transition: 0.3s;
+    }
+    .heart-button:hover {
+      background: #ff1493;
+    }
+    .message {
+      max-width: 800px;
+      font-size: 1.2rem;
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 2rem;
+      border-radius: 20px;
+      display: none;
+      margin-top: 2rem;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Sirf Aapke Liye – Modak 💖</h1>
+    <button class="heart-button" onclick="revealMessage()">Modak, Click to Reveal My Heart 💌</button>
+    <div class="message" id="message">
+      <p>Modakji... Aap gussa ho toh sab kuchh thama thama sa lagta hai.<br>
+      Aapkii awaaz, aapkii hansi… sab kuch mere liye ek sukoon hai.<br>
+      Mujhe pata maine hai ki mujhse bahut badhi galti huyi hai, Please ek aakhri mouka de dijiye na..  —<br>
+      Aapse door rehkar mera dil kabhi shaant nahi reh sakta.<br><br>
+      Aap mere sirf pyaar nahi ho,<br>
+      Aap meri har dua ka jawab ho. Sabkuchh ho<br><br>
+      Galti meri ho, ya waqt ki —<br>
+      main bas itna chahti hoon ki aap mujhe ek baar phir se woh pyaar bhari nazar se dekhiye...<br><br>
+      Please… laut aaiye.<br>
+      "Pyaare se modak ji, gussa chhodiye na please 🙈"<br>
+      Aapki Deepu Aapka intezaar kar raha hai... bina kisi ego ke, sirf pyaar ke saath.<br><br>
+      💖 I love you more than words can ever say....</p>
+    </div>
+  </div>
+  <audio autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function revealMessage() {
+      document.getElementById('message').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
